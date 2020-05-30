@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>Tetris</title>
+    </head>
+    <body>
+        <div class="full-game-wrapper">
+            <div class="game-wrapper">
+                <div class="score-wrapper">
+                    <div class="score-container">
+                        Score:
+                        <div id="score">0</div>
+                    </div>
+                </div>
+                <canvas id="tetris" width="300px" height="600px"></canvas>
+
+                <div class="speed-show">
+                    Dropdown speed:
+                    <div id="dropdown-speed">0</div>
+                </div>
+                <button class="btn increaseSpeed">
+                    Increase Speed by: 50ms
+                </button>
+                <button class="btn decreaseSpeed">
+                    Decrease Speed by: 50ms
+                </button>
+                <button class="btn reload">Reload Game</button>
+            </div>
+            <div class="score-btn-wrapper">
+                <div class="score-board">
+                    <p class="top-score">Daily Top Score:</p>
+                    <span class="score-output"></span>
+                </div>
+
+                <button class="btn delete-result">
+                    Delete Daily Top Score
+                </button>
+            </div>
+        </div>
+
+        <script src="jscript/tetrominoes.js"></script>
+        <script src="jscript/tetris.js"></script>
+    </body>
+</html>

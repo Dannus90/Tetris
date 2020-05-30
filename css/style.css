@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url("../img/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: monospace;
+    height: 100vh;
+    margin: 0;
+}
+
+.full-game-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+    .full-game-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    body {
+        height: 100%;
+    }
+}
+
+/* Game Wrapper */
+.game-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 325px;
+    margin: auto;
+}
+/* SCORE */
+
+.score-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+#score {
+    display: inline-block;
+}
+
+.score-container {
+    font-size: 25px;
+    font-weight: bold;
+}
+/* SPEED */
+#dropdown-speed {
+    display: inline-block;
+}
+
+.speed-show {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 5px 0;
+    text-align: center;
+}
+
+/* BUTTONS */
+.btn {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    outline: none;
+}
+
+.btn:hover {
+    opacity: 0.85;
+    cursor: pointer;
+}
+.btn:active {
+    transform: scale(0.95);
+}
+
+.increaseSpeed {
+    background-color: green;
+    margin: 5px;
+}
+
+.decreaseSpeed {
+    background-color: red;
+    margin: 5px;
+}
+
+.score-board {
+    background-color: #fff;
+    height: 250px;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.top-score {
+    display: block;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 5px;
+    border-bottom: 2px solid black;
+}
+
+.reload {
+    margin: 5px;
+    background-color: purple;
+}
+
+.delete-result {
+    width: 200px;
+    background-color: black;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.score-btn-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Score output */
+.score-output {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    top: 45%;
+    right: 0;
+    font-size: 32px;
+    text-align: center;
+}
