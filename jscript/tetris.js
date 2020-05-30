@@ -170,7 +170,7 @@ Piece.prototype.lock = function () {
             if (this.y + r < 0) {
                 alert("GAME OVER!");
                 // stop request animation frame
-                console.log(window.localStorage.getItem("score"));
+
                 gameOver = true;
 
                 if (
@@ -288,7 +288,6 @@ increaseSpeed.addEventListener("click", () => {
 });
 
 decreaseSpeed.addEventListener("click", () => {
-    console.log("clicked");
     if (speed < 1200) {
         speed += 50;
         showSpeedElement.innerHTML = speed + "ms";
@@ -300,7 +299,6 @@ setInterval(function () {
         speed -= 50;
         showSpeedElement.innerHTML = speed + "ms";
     }
-    console.log(speed);
 }, 15000);
 
 function drop() {
