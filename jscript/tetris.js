@@ -256,19 +256,19 @@ function CONTROL(e) {
     switch (e.keyCode) {
         case 37:
             p.moveLeft();
-            dropStart = Date.now();
+            // dropStart = Date.now();
             break;
         case 38:
             p.rotate();
-            dropStart = Date.now();
+            // dropStart = Date.now();
             break;
         case 39:
             p.moveRight();
-            dropStart = Date.now();
+            // dropStart = Date.now();
             break;
         case 40:
             p.moveDown();
-            dropStart = Date.now();
+            // dropStart = Date.now();
             break;
     }
 }
