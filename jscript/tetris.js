@@ -23,6 +23,7 @@ function drawSquare(x, y, color) {
 
     ctx.strokeStyle = "BLACK";
     ctx.strokeRect(x * SQ, y * SQ, SQ, SQ);
+    ctx.lineWidth = 2;
 }
 
 //Create Board
